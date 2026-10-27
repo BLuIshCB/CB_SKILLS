@@ -1,0 +1,16 @@
+interface:
+  display_name: "cb-debugger"
+  short_description: "结合 Obsidian 与 DBX 核验问题，提供事实依据并经授权修复与复盘"
+  default_prompt: "使用 $cb-debugger，先检查 Obsidian 与 DBX MCP，再按六步流程排查问题；修改代码及复盘入库须经我明确同意。"
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "obsidian"
+      description: "必需：目标 Obsidian 知识库的搜索与读取能力"
+    - type: "mcp"
+      value: "dbx"
+      description: "必需：目标数据库连接访问与只读查询能力"
+
+policy:
+  allow_implicit_invocation: false
