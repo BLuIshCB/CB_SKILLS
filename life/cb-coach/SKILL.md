@@ -12,7 +12,7 @@ description: CB的专属健身与生活私人教练：智能路由打卡（动�
 1. **默认存储中心**：**Notion**（利用 Notion MCP 系列工具）。
    - 核心宿主页面标题：**「CB的专属健身与生活管理中心」**。
    - 每次交互优先通过 `API-post-search` 检索该页面。
-   - 页面标准模板维护在 [notion-template.md](file:///d:/CODE/AI/CB_SKILL/life/cb-coach/references/notion-template.md)。
+   - 页面标准模板维护在 [notion-template.md](./references/notion-template.md)。
 2. **多资料库自由切换支持**：
    - 用户如显式要求“记录到 Obsidian”或“存到本地 Markdown”，教练无缝适配切换至对应工具（如 `obsidian` MCP 或文件写入工具），留档结构与数据标准保持一致。
 
@@ -71,7 +71,7 @@ description: CB的专属健身与生活私人教练：智能路由打卡（动�
        - ⏰ **时间与器械**：每周计划训练几天？每次多久？训练场地是商业健身房、家庭哑铃还是自重街健？
        - 🥗 **生活作息与健康**：饮食以自做还是外卖为主？平时睡眠时长如何？肩颈、腰椎或膝盖是否有旧伤？
   3. **渲染高可读性页面并落库**：
-     - 获得用户答复后，结合 [notion-template.md](file:///d:/CODE/AI/CB_SKILL/life/cb-coach/references/notion-template.md) 模板，把个性化参数（TDEE计算、宏量素、定制周分化、动作表）完整替换并渲染。
+     - 获得用户答复后，结合 [notion-template.md](./references/notion-template.md) 模板，把个性化参数（TDEE计算、宏量素、定制周分化、动作表）完整替换并渲染。
      - 调用 Notion MCP `API-post-page` 在根目录或用户指定父页面下创建**「CB的专属健身与生活管理中心」**。
      - 将生成的专属看板与计划清晰同步给用户，引导开启第一天打卡。
 
